@@ -1,0 +1,13 @@
+@media only screen and (min-width: 769px) and (max-width: 992px) {/*MOVIL cuando se > 769px*/
+
+
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {/*TABLET cuando se > 993px*/
+
+
+}
+@media only screen and (min-width: 1201px)  {/*PC cuando se > 1201px*/
+
+
+
+}
