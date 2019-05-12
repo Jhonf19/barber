@@ -4,8 +4,77 @@
 html, body{
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 body{
   font-family: 'Pragati Narrow', sans-serif;
+}
+ header{
+   /* border: red solid; */
+   background: #000;
+   height: 80px;
+   align-items: center;
+   /* width: 100%; */
+ }
+
+ ul li a{
+   font-size: 20px;
+   text-decoration: none;
+   color: #fff;
+ }
+ ul{
+   float: right;
+   display: flex;
+   list-style: none;
+   margin: 16px;
+ }
+ul.mv{
+  display: none;
+}
+ li{
+   margin: 10px;
+ }
+ .menu-icon{
+   color: #fff;
+   font-size: 20px;
+   margin: 25px 16px;
+   line-height: 30px;
+   float: right;
+  cursor: pointer;
+  display: none;
+ }
+ .logo{
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: bold;
+   line-height: 48px;
+   margin: 16px;
+   float: left;
+   color: #fff;
+ }
+ .show-nav{
+   display: block;
+ }
+ .hide-nav{
+   display: none;
+ }
+@media (max-width:576px) {
+  .menu-icon{
+    display: inherit;
+  }
+  header{
+    background: blue;
+  }
+  ul li a{
+    color: black;
+  }
+  ul{
+    display: none;
+  }
+  ul.mv{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
