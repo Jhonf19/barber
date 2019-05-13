@@ -1,24 +1,8 @@
-$(function() {
-  $(".menu-icon i").on("click", function() {
-    $("ul.mv").slideToggle();
-  });
-  $(window).resize(function(){
-    var a =$( window ).width();
-    if (a>576) {
-      $("ul.mv").hide();
-    }
-
-  });
-
-});
-
-//
-// $(window).on("scroll", function() {
-//   if ($(window).scrollTop()) {
-//     $("nav").addClass("black");
-//     $("h1").addClass("h");
-//   }else {
-//     $("nav").removeClass("black");
-//     $("h1").removeClass("h");
-//   }
-// });
+const navSlide = ()=>{
+    const icon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav-link');
+    icon.addEventListener('click', ()=>{
+      nav.classList.toggle('nav-active')
+    })
+}
+navSlide()

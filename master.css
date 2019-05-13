@@ -1,80 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Pragati+Narrow');
 
 
-html, body{
-  margin: 0;
-  padding: 0;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body{
   font-family: 'Pragati Narrow', sans-serif;
 }
- header{
-   /* border: red solid; */
-   background: #000;
-   height: 80px;
-   align-items: center;
-   /* width: 100%; */
- }
+nav{
+  background-color: rgba(200, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
 
- ul li a{
-   font-size: 20px;
-   text-decoration: none;
-   color: #fff;
- }
- ul{
-   float: right;
+.logo{
+
+}
+ .nav-link{
+   border: black solid;
    display: flex;
-   list-style: none;
-   margin: 16px;
  }
-ul.mv{
+.nav-link li{
+  border: blue solid;
+  list-style: none;
+}
+.nav-link li a{
+  border: green solid;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.menu-icon{
+  border: green solid;
   display: none;
 }
- li{
-   margin: 10px;
- }
- .menu-icon{
-   color: #fff;
-   font-size: 20px;
-   margin: 25px 16px;
-   line-height: 30px;
-   float: right;
-  cursor: pointer;
-  display: none;
- }
- .logo{
-   text-decoration: none;
-   font-size: 30px;
-   font-weight: bold;
-   line-height: 48px;
-   margin: 16px;
-   float: left;
-   color: #fff;
- }
- .show-nav{
-   display: block;
- }
- .hide-nav{
-   display: none;
- }
-@media (max-width:576px) {
-  .menu-icon{
-    display: inherit;
-  }
-  header{
-    background: blue;
-  }
-  ul li a{
-    color: black;
-  }
-  ul{
-    display: none;
-  }
-  ul.mv{
-    margin: 0;
-    padding: 0;
+@media screen and (max-width:576px) {
+  .nav-link{
+    display: block;
+    /* flex-direction: column; */
+    position: absolute;
+    top: 70px;
+    /* left: -100vw; */
     width: 100%;
-    float: left;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background: rgba(255, 0, 0, 0.5);
+  }
+  .nav-link li{
+    /* width: 90%; */
+  }
+  .nav-link li a{
+    width: 10vw;
+  }
+  .menu-icon{
+    border: green solid;
+    display: flex;
   }
 }
