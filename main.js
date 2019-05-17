@@ -6,4 +6,8 @@ $(()=> {
     // $(".btn-menu").toggleClass("btn btn-dark")
     // alert("WW")
   })
+  $(window).scroll(()=>{
+
+    console.log($("#about").scrollTop());
+  })
 })
